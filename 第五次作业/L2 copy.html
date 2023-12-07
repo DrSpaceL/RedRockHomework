@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浅浅拷贝一下</title>
+    <script>
+        let user = { name: "这样写也成" };
+        let user2 = {};
+        Object.assign(user2, user);
+        /*使用Object.assign浅拷贝，将user的值拷贝到user2，而新的对象user2跟原对象user无关联*/
+        console.log(user2);//输出 name："这样写也成"
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
