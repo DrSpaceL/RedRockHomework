@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对，我的对象</title>
+    <script>
+        //使用对象字面量
+        let objj = {
+            name: '廖大炮',
+            age: '18',
+            sex: '女'
+        }
+        console.log(objj);
+
+        // 使用Object( )构造函数
+        let obj = new Object();
+        obj.name = '廖钢钢';
+        obj.age = '十八';
+        obj.sex = '女的';
+        console.log(obj);
+
+        //使用构造函数创建一个对象
+        function Person(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.action = function (act) {
+                console.log(act);
+            }
+        }
+        const lxy = new Person('廖铁铁', '8', '男的相对词');
+        const hr = new Person('FONG', '18', '女');
+        lxy.action('通信学院的lxy向你传来一句亲切的问候；吃了吗');
+        console.log(hr.name);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
